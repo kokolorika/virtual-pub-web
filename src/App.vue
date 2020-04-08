@@ -1,5 +1,5 @@
 <template>
-  <div class="app">hallo</div>
+  <div>hallo</div>
 </template>
 
 <script>
@@ -9,4 +9,5 @@ export default {
 </script>
 
 <style scoped>
+/* scoped: all css is only available for this component */
 </style>

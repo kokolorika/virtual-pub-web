@@ -1,10 +1,17 @@
 <template>
-  <div>hallo</div>
+  <div>{{hello}}</div>
 </template>
 
 <script>
+import { HelloWorld } from "Service";
+
 export default {
-  name: "App"
+  name: "App",
+  data: () => {
+    return {
+      hello: HelloWorld()
+    };
+  }
 };
 </script>
 

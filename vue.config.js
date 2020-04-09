@@ -4,7 +4,7 @@ module.exports = {
     configureWebpack: {
         resolve: {
             alias: {
-                Service: path.resolve(__dirname, `src/service/${process.env.VUE_APP_SERVICE}/api`),   
+                Service: path.resolve(__dirname, `src/service/${process.env.VUE_APP_SERVICE}/${process.env.VUE_APP_SERVICE}.api`),   
             }
         }
     }

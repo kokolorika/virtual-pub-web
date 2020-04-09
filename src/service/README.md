@@ -10,7 +10,9 @@ Der Ordnername (im Beispiel 'mock') gibt hierbei die zu verwendende Implementier
 Damit eine Implementierung verwendet wird, muss in der ```.env.local``` der Parameter ```VUE_APP_SERVICE``` gesetzt sein. Der Wert ist hierbei der entsprechende Ordnername dessen Service-Implementierung verwendet werden soll.
 
 ## Implementierung
-Bei der Implementierung einer neuen Schnittstelle, ist immer darauf zu achten dass diese auch exportiert wird. Der Export muss immer über die ```service/{impl}/api/index.js``` geschehen.
+Bei der Implementierung einer neuen Schnittstelle, ist immer darauf zu achten dass diese auch exportiert wird. Der Export muss immer über die ```service/{impl}/{impl}.api.js``` geschehen.
+
+Beispiel Mock: Es muss eine Datei namens ```service/mock/mock.api.js``` geben. Diese wird beim Import von 'Service' immer importiert.
 
 ## Quellen
 https://cli.vuejs.org/config/#publicpath -> vue.config.js
